@@ -1,4 +1,13 @@
-# Placeholder for sentiment analysis function
+from nltk.sentiment import SentimentIntensityAnalyzer
+
 def analyze_sentiment(text: str) -> str:
-    print("Analyzing sentiment for text:", text)
-    return "positive" 
+    analyzer = SentimentIntensityAnalyzer()
+    
+    score = analyzer.polarity_scores(text)
+    
+    if score['compound'] > 0.05:
+        return "Positive"
+    elif score['compound'] < -0.05:
+        return "Negative"
+    else:
+        return "Neutral"

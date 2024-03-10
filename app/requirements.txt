@@ -1,4 +1,11 @@
-fastapi
-uvicorn
-pydantic
-spacy
+fastapi==0.110.0
+uvicorn==0.28.0
+pydantic==2.6.3
+spacy==3.7.4
+nltk==3.8.1
+transformers==4.38.2
+ipython
+rich
+torch==1.10.0
+torchvision==0.11.1
+torchaudio==0.10.0

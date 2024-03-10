@@ -18,7 +18,6 @@ set +a
 
 envsubst < docker-compose.template.yml > docker-compose.yml
 
-docker-compose build
 docker-compose up
 
 echo "Deployment to $1 environment completed."
