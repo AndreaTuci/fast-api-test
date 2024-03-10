@@ -1,0 +1,47 @@
+# Build files
+docker-compose.yml
+docker-compose.override.yml
+
+# Environment files
+.env
+*.env.local
+*.env.production
+*.env.development
+*.env.staging
+
+# Python Directory
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Python Packaging
+*.dist-info/
+*.egg-info/
+*.egg
+venv/
+pip-wheel-metadata/
+
+# Local db
+*.sqlite
+
+# Logs
+*.log
+log/
+
+# Node.js
+node_modules/
+
+# IDE directories
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# SSL
+*.pem
+*.crt
+*.key
+
+# Temporary files
+tmp/
