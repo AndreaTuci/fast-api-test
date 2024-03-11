@@ -9,7 +9,7 @@ RUN pip install nltk && \
     python -m nltk.downloader vader_lexicon
 
 RUN python -m spacy download en_core_web_sm
-RUN python -m spacy download it_core_news_sm
+RUN python -m spacy download it_core_news_md
 
 
 COPY ./app /app
